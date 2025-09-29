@@ -1,12 +1,25 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export', // 静的HTMLエクスポートを有効にする
-  distDir: 'out', // ビルド出力ディレクトリを 'out' に指定 (任意だが推奨)
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '', // GitHub Pagesのサブディレクトリに対応
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '', // アセットのパスも調整
-  images: {
-    unoptimized: true, // GitHub PagesではNext/Imageの最適化が動作しないため無効化
-  },
-};
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import { FlatCompat } from "@eslint/eslintrc";
 
-export default nextConfig;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+});
+
+const eslintConfig = [
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    ignores: [
+      "node_modules/**",
+      ".next/**",
+      "out/**",
+      "build/**",
+      "next-env.d.ts",
+    ],
+  },
+];
+
+export default eslintConfig;
