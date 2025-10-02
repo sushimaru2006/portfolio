@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // Google Fontsをインポート
 import { Roboto_Mono, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 // フォント設定
 const robotoMono = Roboto_Mono({
@@ -24,10 +25,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // classNameにフォント変数を適用
     <html lang="ja">
       <body className={`${robotoMono.variable} ${sourceCodePro.variable}`}>
-        {children}
+        <Header /> {/* Headerコンポーネントをここに追加 */}
+        <main className="pt-20"> {/* ヘッダーの高さ分だけpaddingを追加 */}
+          {children}
+        </main>
       </body>
     </html>
   );
