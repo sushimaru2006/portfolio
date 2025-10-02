@@ -5,31 +5,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 // アイコンを使用します (npm install react-icons)
 import { FaFolder, FaTimes, FaPython } from 'react-icons/fa';
 import { SiCurseforge } from "react-icons/si";
-// 制作実績データ
-// 複数ある場合はこの配列に追加していきます
-const worksData = [
-  {
-    title: 'ICT基礎ラボ for junior Python入門',
-    description: '中学生への技術教育と、学生自身の学びの深化を目的とした講座。',
-    tech: ['Python'],
-    role: '講師兼リーダーとしてカリキュラム設計、チームマネジメントを担当。参加者が挫折しないよう、基礎理論の伝達に特に注力しました。',
-    learnings:
-      '人に教えることの難しさと楽しさを学びました。複雑な概念をいかに平易な言葉で伝えるかというティーチングスキル、そしてチームで一つの目標に向かうプロジェクトマネジメント能力が向上しました。',
-  },
-  // 他のプロジェクトがあればここに追加
-  // {
-  //   title: '次のプロジェクト',
-  //   ...
-  // },
-];
+import { worksData, type WorkProject } from '@/data/works';
+
 
 const Works = () => {
   // 選択されたプロジェクトを管理するstate (nullの場合はモーダル非表示)
-  const [selectedWork, setSelectedWork] = useState<(typeof worksData)[0] | null>(
-    null
-  );
+  const [selectedWork, setSelectedWork] = useState<WorkProject | null>(null);
 
-  const openModal = (work: (typeof worksData)[0]) => {
+  const openModal = (work: WorkProject) => {
     setSelectedWork(work);
   };
 
