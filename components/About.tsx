@@ -11,9 +11,9 @@ const About = () => {
     <section id="about" className="py-24">
       <div className="container mx-auto max-w-4xl px-4">
         <motion.h2
-          className="text-3xl font-bold text-center mb-12 font-mono text-[#64ffda]"
+          className="font-heading-md header-height font-bold text-center mb-12 font-mono text-[#64ffda]"
           initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 80 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6 }}
         >
@@ -23,7 +23,7 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* 左側: アイコン */}
           <motion.div
-            className="flex justify-center md:col-span-1"
+            className="flex justify-center space-lg md:col-span-1"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.5 }}
@@ -35,7 +35,7 @@ const About = () => {
 
           {/* 右側: 自己紹介文 */}
           <motion.div
-            className="md:col-span-2"
+            className="md:col-span-2 font-body-primary"
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.5 }}
