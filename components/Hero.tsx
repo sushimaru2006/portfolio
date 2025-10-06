@@ -100,7 +100,7 @@ const Hero = () => {
       <div className="z-10 w-full max-w-2xl px-4">
         <div className="rounded-lg bg-gray-900/50 p-6 shadow-xl ring-1 ring-cyan-400/30">
           <pre className="text-left">
-            <code className="text-sm md:text-base lg:text-lg">
+            <code className="font-body-primary space-sm">
               <TypeAnimation
                 sequence={[codeText, 2000]} // テキストを表示し、2秒待つ
                 wrapper="span"
@@ -118,11 +118,11 @@ const Hero = () => {
       </div>
 
       {/* スクロールダウンアイコン */}
-      <div className="absolute bottom-10 z-10">
+      {/* <div className="absolute bottom-10 z-10">
         <a href="#about" aria-label="Scroll to about section">
           <FaChevronDown className="animate-bounce text-3xl text-slate-400 hover:text-cyan-400" />
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };
