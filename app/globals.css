@@ -13,24 +13,50 @@ h1, h2, h3, h4, h5, h6 {
   color: #e2e8f0; /* 見出しの文字色（例） */
 }
 
-/* font size */
-.text-xl{
-  font-size: 1.25rem; /* 20px */
-  line-height: 1.75rem; /* 28px */
+/* space */
+.space-lg {
+  margin-top: 4rem; /* 64px */
+  margin-bottom: 4rem; /* 64px */
+  margin-right: 4rem; /* 64px */
+  margin-left: 4rem; /* 64px */
 }
-.text-2xl {
-  font-size: 1.5rem; /* 24px */
-  line-height: 2rem; /* 32px */
+.space-md {
+  margin-top: 2rem; /* 32px */
+  margin-bottom: 2rem; /* 32px */
+  margin-right: 2rem; /* 32px */
+  margin-left: 2rem; /* 32px */
 }
-.text-3xl {
-  font-size: 1.875rem; /* 30px */
-  line-height: 2.25rem; /* 36px */
+.space-sm {
+  margin-top: 1rem; /* 16px */
+  margin-bottom: 1rem; /* 16px */
+  margin-right: 1rem; /* 16px */
+  margin-left: 1rem; /* 16px */
 }
-.text-4xl {
+
+/* Heading */
+.font-heading-xl {
+  font-size: 3rem; /* 48px */
+  line-height: 1; /* 48px */
+}
+.font-heading-lg {
   font-size: 2.25rem; /* 36px */
   line-height: 2.5rem; /* 40px */
 }
-.text-5xl {
-  font-size: 3rem; /* 48px */
-  line-height: 1; /* 48px */
+.font-heading-md {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+.font-heading-sm {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+/* Body */
+.font-body-primary {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+.font-body-secondary {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
 }
