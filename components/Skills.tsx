@@ -94,9 +94,9 @@ const Skills = () => {
     <section id="skills" className="py-24">
       <div className="container mx-auto max-w-4xl px-4">
         <motion.h2
-          className="text-3xl font-bold text-center mb-12 font-mono text-[#64ffda]"
+          className="font-heading-md header-height font-bold text-center mb-12 font-mono text-[#64ffda]"
           initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 80 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6 }}
         >
@@ -104,9 +104,9 @@ const Skills = () => {
         </motion.h2>
 
         <motion.div
-          className="relative mx-auto h-80 w-full max-w-lg md:h-96"
+          className="relative space-lg  "
           initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 2 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
