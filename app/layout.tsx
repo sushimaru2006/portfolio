@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Roboto_Mono, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import ParticleBackground from "@/components/ParticleBackground";
 
 // フォント設定
 const robotoMono = Roboto_Mono({
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${robotoMono.variable} ${sourceCodePro.variable}`}>
+        <ParticleBackground /> {/* ParticleBackgroundコンポーネントをここに追加 */}
         <Header /> {/* Headerコンポーネントをここに追加 */}
         <main className="header-height"> {/* ヘッダーの高さ分だけpaddingを追加 */}
           {children}
