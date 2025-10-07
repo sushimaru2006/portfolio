@@ -21,19 +21,10 @@ const TimelineItem = ({
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.8 }}
     >
-      {/* 項目を左右に振り分けるためのスペーサー */}
-      {!isRight && <div className="hidden md:block md:w-5/12"></div>}
-
-      {/* 中央のドット */}
-      <div className="z-20 flex w-10 items-center bg-[#0a192f] md:w-auto">
-        <div className="mx-auto h-4 w-4 rounded-full bg-[#64ffda] shadow-[0_0_10px_#64ffda]"></div>
-      </div>
 
       {/* コンテンツ */}
       <div
-        className={`z-10 w-full rounded-lg bg-slate-800 p-4 shadow-lg md:w-5/12 ${
-          isRight ? 'text-left' : 'text-right'
-        }`}
+        className={`z-10 w-full rounded-lg bg-slate-800 p-4 shadow-lg md:w-5/12`}
       >
         <p className="mb-1 text-sm font-semibold text-[#64ffda]">{item.date}</p>
         <p className="text-base text-slate-300">{item.event}</p>
