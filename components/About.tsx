@@ -9,8 +9,8 @@ import { FaUserCircle } from 'react-icons/fa';
 const About = () => {
   return (
     <section id="about" className="py-24">
-      <div className="container mx-auto max-w-4xl px-4">
-        <div className="grid header-height md:grid-cols-3 gap-8 items-center">
+      <div className="container max-w-4xl">
+        <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* 左側: アイコン */}
           <motion.div
             className="flex justify-center space-lg md:col-span-1"

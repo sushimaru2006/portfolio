@@ -21,10 +21,10 @@ const Works = () => {
   };
 
   return (
-    <section id="works" className="py-24">
-      <div className="container header-height mx-auto max-w-4xl px-4">
+    <section id="works">
+      <div className="container max-w-4xl">
         {/* カードグリッド */}
-        <div className="grid grid-cols-1 space-sm font-body-primary gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 font-body-primary gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {worksData.map((work, index) => (
             <motion.div
               key={index}
@@ -36,17 +36,17 @@ const Works = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="flex items-center justify-between">
-                <FaFolder className="text-4xl text-[#00aaff]" />
+                <FaFolder className="font-body-primary text-[#00aaff]" />
               </div>
               <h3 className="mt-4 text-xl font-bold text-slate-200 group-hover:text-[#64ffda]">
                 {work.title}
               </h3>
-              <p className="mt-2 text-sm text-slate-400">{work.description}</p>
+              <p className="mt-2 font-body-secondary text-slate-400">{work.description}</p>
               <div className="mt-4 flex space-x-2">
                 {work.tech.map((t, i) => (
                   <span
                     key={i}
-                    className="rounded-full bg-slate-700 px-2 py-1 text-xs text-cyan-300"
+                    className="rounded-full bg-slate-700 px-2 py-1 font-body-secondary text-cyan-300"
                   >
                     {t}
                   </span>
@@ -61,14 +61,14 @@ const Works = () => {
       <AnimatePresence>
         {selectedWork && (
           <motion.div
-            className="fixed inset-0 z-50 font-body-secondary space-sm flex items-center justify-center bg-black/70 backdrop-blur-sm"
+            className="container fixed inset-0 z-50 font-body-secondary flex items-center justify-center bg-black/70 backdrop-blur-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={closeModal} // 背景クリックで閉じる
           >
             <motion.div
-              className="relative m-4 w-full max-w-2xl rounded-lg bg-slate-800 p-8 shadow-2xl"
+              className="relative m-4 w-full max-w-2xl rounded-lg bg-slate-800 shadow-2xl"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
@@ -81,20 +81,20 @@ const Works = () => {
               >
                 <FaTimes />
               </button>
-              <h2 className="mb-2 text-2xl font-bold text-[#64ffda]">
+              <h2 className="mb-2 space-sm font-body-primary font-bold text-[#64ffda]">
                 {selectedWork.title}
               </h2>
-              <div className="mb-4 flex space-x-2">
+              <div className="mb-4 flex space-sm">
                 {selectedWork.tech.map((t, i) => (
                   <span
                     key={i}
-                    className="rounded-full bg-slate-700 px-3 py-1 text-sm text-cyan-300"
+                    className="rounded-full bg-slate-700 font-body-secondary text-cyan-300"
                   >
                     {t}
                   </span>
                 ))}
               </div>
-              <div className="space-y-4 text-slate-300">
+              <div className="space-sm text-slate-300">
                 <div>
                   <h4 className="font-semibold text-slate-100">背景</h4>
                   <p>{selectedWork.description}</p>

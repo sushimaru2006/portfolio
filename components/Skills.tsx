@@ -91,8 +91,8 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-24">
-      <div className="container header-height mx-auto max-w-4xl px-4">
+    <section id="skills">
+      <div className="container max-w-4xl">
         <motion.div
           className="relative space-lg"
           initial={{ opacity: 0, scale: 0.8 }}

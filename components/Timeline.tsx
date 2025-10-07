@@ -56,8 +56,8 @@ const Timeline = () => {
   const scaleY = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <section id="timeline" className="py-24">
-      <div className="container header-height mx-auto max-w-4xl px-4 font-body-primary">
+    <section id="timeline">
+      <div className="container max-w-4xl font-body-primary">
         <div ref={targetRef} className="relative">
           {/* タイムラインの項目をマッピング */}
           <div className="relative z-10">

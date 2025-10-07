@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className={`${robotoMono.variable} ${sourceCodePro.variable}`}>
         <Header /> {/* Headerコンポーネントをここに追加 */}
-        <main className="pt-20"> {/* ヘッダーの高さ分だけpaddingを追加 */}
+        <main className="header-height"> {/* ヘッダーの高さ分だけpaddingを追加 */}
           {children}
         </main>
       </body>
