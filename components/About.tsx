@@ -4,7 +4,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 // アイコンのプレースホルダーとしてreact-iconsを使用します。
 // npm install react-icons でインストールしてください。
-import { FaUserCircle } from 'react-icons/fa';
+// import { FaUserCircle } from 'react-icons/fa';
+import icon from '../public/icon.png';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -13,14 +15,22 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* 左側: アイコン */}
           <motion.div
-            className="flex justify-center space-lg md:col-span-1"
+            className="flex space-lg md:col-span-1"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.8, ease: 'easeInOut' }}
           >
             {/* TODO: ここにご自身のSVGアイコンを配置してください */}
-            <FaUserCircle className="text-8xl md:text-9xl text-[#00aaff]" />
+            {/* <FaUserCircle className="text-8xl md:text-9xl text-[#00aaff]" /> */}
+            <Image
+              src={icon}
+              alt="Profile Icon"
+              width={150}
+              height={150}
+              className="rounded-full"
+            />
+            <p className="font-semibold font-heading-4xl flex items-center space-md text-[#64ffda]">Maru</p>
           </motion.div>
 
           {/* 右側: 自己紹介文 */}

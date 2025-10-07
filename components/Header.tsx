@@ -16,7 +16,7 @@ const Header = () => {
           href="/"
           className={`font-heading-xl space-sm font-bold ${pathname === '/' ? 'text-[#64ffda]' : ''}`}
         >
-          Maru
+          M
         </Link>
         <ul className="flex font-mono font-heading-sm">
           <li>

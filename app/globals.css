@@ -41,6 +41,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Heading */
+.font-heading-4xl {
+  font-size: 5.625rem; /* 90px */
+  line-height: 1; /* 90px */
+}
+.font-heading-3xl {
+  font-size: 4.5rem; /* 72px */
+  line-height: 1; /* 72px */
+}
+.font-heading-2xl {
+  font-size: 3.75rem; /* 60px */
+  line-height: 1; /* 60px */
+}
 .font-heading-xl {
   font-size: 3rem; /* 48px */
   line-height: 1; /* 48px */
@@ -89,6 +101,18 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header-height {
     padding-top: 40px;
+  }
+  .font-heading-4xl {
+    font-size: 5rem; /* 80px */
+    line-height: 1; /* 80px */
+  }
+  .font-heading-3xl {
+    font-size: 4rem; /* 64px */
+    line-height: 1; /* 64px */
+  }
+  .font-heading-2xl {
+    font-size: 4rem; /* 64px */
+    line-height: 1; /* 64px */
   }
   .font-heading-xl {
     font-size: 2.5rem; /* 40px */
@@ -139,6 +163,18 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 72px;
   }
 
+  .font-heading-4xl {
+    font-size: 4.5rem; /* 72px */
+    line-height: 1; /* 72px */
+  }
+  .font-heading-3xl {
+    font-size: 3.75rem; /* 60px */
+    line-height: 1; /* 60px */
+  }
+  .font-heading-2xl {
+    font-size: 3rem; /* 48px */
+    line-height: 1; /* 48px */
+  }
   .font-heading-xl {
     font-size: 2.25rem; /* 36px */
     line-height: 2.5rem; /* 40px */
@@ -193,6 +229,18 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 60px;
   }
 
+  .font-heading-4xl {
+    font-size: 4rem; /* 64px */
+    line-height: 1; /* 64px */
+  }
+  .font-heading-3xl {
+    font-size: 3.75rem; /* 60px */
+    line-height: 1; /* 60px */
+  }
+  .font-heading-2xl {
+    font-size: 3rem; /* 48px */
+    line-height: 1; /* 48px */
+  }
   .font-heading-xl {
     font-size: 1.875rem; /* 30px */
     line-height: 2.25rem; /* 36px */
