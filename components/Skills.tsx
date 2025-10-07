@@ -92,7 +92,7 @@ const Skills = () => {
 
   return (
     <section id="skills">
-      <div className="container max-w-4xl">
+      <div className="container max-w-4xl flex items-center justify-center min-h-screen">
         <motion.div
           className="relative space-lg"
           initial={{ opacity: 0, scale: 0.8 }}
