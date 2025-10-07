@@ -26,9 +26,7 @@ const About = () => {
             <Image
               src={icon}
               alt="Profile Icon"
-              width={150}
-              height={150}
-              className="rounded-full"
+              className="rounded-full img-xl"
             />
             <p className="font-semibold font-heading-4xl flex items-center space-md text-[#64ffda]">Maru</p>
           </motion.div>
