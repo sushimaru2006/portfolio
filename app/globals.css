@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 1rem; /* 16px */
 }
 .header-height {
-  padding-top: 72px;
+  padding-top: 96px;
 }
 
 /* Heading */
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0.75rem; /* 12px */
   }
   .header-height {
-    padding-top: 60px;
+    padding-top: 40px;
   }
   .font-heading-xl {
     font-size: 2.5rem; /* 40px */
@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0.5rem; /* 8px */
   }
   .header-height {
-    padding-top: 54px;
+    padding-top: 72px;
   }
 
   .font-heading-xl {
@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0.25rem; /* 4px */
   }
   .header-height {
-    padding-top: 45px;
+    padding-top: 60px;
   }
 
   .font-heading-xl {
