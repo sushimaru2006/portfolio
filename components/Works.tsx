@@ -22,17 +22,7 @@ const Works = () => {
 
   return (
     <section id="works" className="py-24">
-      <div className="container mx-auto max-w-4xl px-4">
-        <motion.h2
-          className="font-heading-md header-height font-bold text-center mb-12 font-mono text-[#64ffda]"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 80 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.6 }}
-        >
-          04. Works
-        </motion.h2>
-
+      <div className="container header-height mx-auto max-w-4xl px-4">
         {/* カードグリッド */}
         <div className="grid grid-cols-1 space-sm font-body-primary gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {worksData.map((work, index) => (

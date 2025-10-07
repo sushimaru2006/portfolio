@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 1rem; /* 16px */
 }
 .header-height {
-  height: 8rem; /* 128px */
+  padding-top: 48px;
 }
 
 /* Heading */
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0.5rem; /* 8px */
   }
   .header-height {
-    height: 6rem; /* 96px */
+    padding: 36px;
   }
 
   .font-heading-xl {
@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0.25rem; /* 4px */
   }
   .header-height {
-    height: 4rem; /* 64px */
+    padding: 30px;
   }
 
   .font-heading-xl {

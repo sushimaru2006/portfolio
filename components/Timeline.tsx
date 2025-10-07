@@ -57,26 +57,8 @@ const Timeline = () => {
 
   return (
     <section id="timeline" className="py-24">
-      <div className="container mx-auto max-w-4xl px-4 font-body-primary">
-        <motion.h2
-          className="font-heading-md header-height font-bold text-center mb-16 font-mono text-[#64ffda]"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 80 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.6 }}
-        >
-          03. Timeline
-        </motion.h2>
-
+      <div className="container header-height mx-auto max-w-4xl px-4 font-body-primary">
         <div ref={targetRef} className="relative">
-          {/* 中央の光るライン */}
-          <motion.div
-            style={{ scaleY }}
-            className="absolute left-1/2 top-0 z-0 h-full w-1 origin-top -translate-x-1/2 bg-cyan-400/30"
-          >
-            <div className="absolute h-full w-full bg-[#64ffda] shadow-[0_0_10px_#64ffda]"></div>
-          </motion.div>
-
           {/* タイムラインの項目をマッピング */}
           <div className="relative z-10">
             {timelineData.map((item, index) => (
